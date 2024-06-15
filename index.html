@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harper Kerstens Website</title>
+
+    <!-- Below code links to Style.css file  --> 
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/_Logo_Outline.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Connect</a></li>
+                    <li><a href="#">Photography</a></li>
+                    
+                </ul>
+            </nav>
+            <div class = "header-text">
+                <p></p>
+                <h1>Welcome!<br> My name is <span> Harper Kerstens</span> <br> take a peak into my work and life</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--About me -->
+    <div id="about">
+        <div class="container">
+            <div class = "row">
+                <div class="about-col-1">
+                    <img src="Images/praycamera.jpg" class = "portrait">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum diam vel enim vulputate, 
+                        sed tempus tortor tempor. Cras facilisis risus nisl, eget euismod libero pulvinar sit amet. Suspendisse tristique orci 
+                        ut laoreet efficitur. In hac habitasse platea dictumst. Ut vel porta dolor. Nunc venenatis lorem vitae venenatis vestibulum. 
+                        Maecenas efficitur, risus vel interdum commodo, nisi neque egestas libero, at bibendum diam magna a magna. Etiam justo quam, 
+                        aliquam nec cursus non, mollis vel dolor. Aliquam ac nisl quis dui efficitur gravida at vel nunc. Maecenas pretium facilisis rhoncus.
+                     </p>
+
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    
+                     </div>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>Cleaner<br>  Kelowna General Hospital 03/23 - Present</span><br>  <li>
+                                Responsible for change over clean in patient rooms and
+                            beds as well as general areas and various operation and treatment rooms.</li>
+                            <li>
+                                Ensuring personal and safety standards and protocals are met in high risk cleans.
+                            </li>
+                            <li>
+                                Cooperating with co-workers to ensure patient safety in areas with fast patient turnover.
+                            </li>
+                        </li>
+                            <li><span>Supervisor<br> Energyplex 03/2022 - 10/2022 </span><br>
+                            <li>
+                                Received customer complaints and worked with guests and team members to resolve issues.
+                            </li>
+                            <li>
+                                Supervised a day camp of young children including being responsible for ensuring kids needs were met and delegating
+                                staff to ensure the safety and enjoyment of the children.
+                            </li>
+                            <li>
+                                Managed staff to ensure they received breaks and that responsibilities were met on shift to contribute to a well-run
+                                facility.
+                            </li>
+                            <li>
+                                Responsible for opening and closing the workplace and compliance with facility policies and procedures.
+                            </li>
+                        </li>
+
+                            <li><span>Guest Service Associate <br> Energyplex 03/2021 - 03/2022</span><br>
+                                <li>
+                                    Assisted guests with various activities such as Rock Climbing, Laser Tag, and more.
+                                </li>
+                                <li>
+                                    Greeted visitors and customers upon arrival and offered assistance.
+                                </li>
+                                <li>
+                                    Ensured guests' general needs were met and an excellent customer experience.
+                                </li>
+                                <li>
+                                    Collaborated with team members to handle guest requirements throughout their stay.
+                                </li>
+                            </li>
+
+                            <li><span>Cashier <br> Princess Auto 05/2021 - 09/2021</span><br>
+                                <li>
+                                    Helped customers complete purchases, locate items, and join reward programs.
+                                </li>
+                                <li>
+                                    Operated cash register for cash and credit card transactions with excellent accuracy levels.
+                                </li>
+                                <li>
+                                    Restocked and organized merchandise in front lanes.
+                                </li>
+                                <li>
+                                    Greeted customers entering the store and responded promptly to customer needs.
+                                </li>
+                                <li>
+                                    Operated cash register to record transactions accurately and efficiently.
+                                </li>
+                            </li>
+
+                            <li><span>Line Cook <br> McDonald's 05/2019 - 09/2020</span><br>
+                                <li>
+                                    Set up and prepared cooking supplies and workstations during opening and closing to maximize productivity.
+                                </li>
+                                <li>
+                                    Followed restaurant stock management schedule to monitor product freshness and rotate out old products.
+                                </li>
+                                <li>
+                                    Prepared multiple orders simultaneously during peak periods with a high accuracy rate, maximizing customer
+                                    satisfaction, and repeat business.
+                                </li>
+                            </li>
+                        </ul>
+                     </div>
+
+
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor's in Computer Science <br>University of British Columbia Okanagan</span><br>Currently in progress</li>
+                            <li><span>Highschool Diploma <br> Kelowna Secondary School</span><br>Completed 05/2021</li>
+
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
