@@ -7,6 +7,9 @@
 
     <!-- Below code links to Style.css file  --> 
     <link rel="stylesheet" href="style.css">
+     
+    <!-- Add Fontawesome.com link below for icon -->
+    <script src="https://kit.fontawesome.com/7e8c697c69.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -16,27 +19,26 @@
             <nav>
                 <img src="Images/_Logo_Outline.png" class="logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Social Media</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Connect</a></li>
                     <li><a href="#">Photography</a></li>
-                    
                 </ul>
             </nav>
-            <div class = "header-text">
+            <div class="header-text">
                 <p></p>
                 <h1>Welcome!<br> My name is <span> Harper Kerstens</span> <br> take a peak into my work and life</h1>
             </div>
         </div>
     </div>
 
-    <!--About me -->
+    <!-- About me -->
     <div id="about">
         <div class="container">
-            <div class = "row">
+            <div class="row">
                 <div class="about-col-1">
-                    <img src="Images/praycamera.jpg" class = "portrait">
+                    <img src="Images/praycamera.jpg" class="portrait">
                 </div>
                 <div class="about-col-2">
                     <h1 class="subtitle">About Me</h1>
@@ -46,13 +48,12 @@
                         ut laoreet efficitur. In hac habitasse platea dictumst. Ut vel porta dolor. Nunc venenatis lorem vitae venenatis vestibulum. 
                         Maecenas efficitur, risus vel interdum commodo, nisi neque egestas libero, at bibendum diam magna a magna. Etiam justo quam, 
                         aliquam nec cursus non, mollis vel dolor. Aliquam ac nisl quis dui efficitur gravida at vel nunc. Maecenas pretium facilisis rhoncus.
-                     </p>
+                    </p>
 
-                     <div class="tab-titles">
+                    <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links"onclick="opentab('education')">Education</p>
-                    
-                     </div>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
                     <div class="tab-contents active-tab" id="experience">
                         <div class="collapsible" id="test">
                             <input type="checkbox" id="collapsible-head-1">
@@ -126,7 +127,7 @@
                             <label for="collapsible-head-6">Bachelor's in Computer Science</label>
                             <div class="collapsible-text">
                                 <h2>09/2021 - Present</h2>
-                                <p>Still in progress</p>
+                                <p>Still in progress at University of British Columbia Okanagan</p>
                             </div>
                         </div>
                         <div class="collapsible" id="educ">
@@ -134,7 +135,9 @@
                             <label for="collapsible-head-7">Highschool Diploma</label>
                             <div class="collapsible-text">
                                 <h2>Completed 05/2021</h2>
-                                <p></p>
+                                <p>
+                                    Completed at Kelowna Secondary School
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -143,22 +146,37 @@
         </div>
     </div>
 
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
-
+    <!-- socials -->
+    <div id="socials">
+        <div class="container">
+            <h1 class="subtitle">Socials</h1>
+            <div class="socials-list">
+                <a href="https://www.instagram.com/harperkerstens/">
+                    <div>
+                        <i class="fa-brands fa-instagram"></i>
+                        <h2>Instagram</h2>
+                    </div>
+                </a>
+                <a href="https://open.spotify.com/user/popharpe?si=878385557a904abe">
+                    <div>
+                        <i class="fa-brands fa-spotify"></i>
+                        <h2>Spotify</h2>
+                    </div>
+                </a>
+                <a href="https://github.com/harperkerstens">
+                    <div>
+                        <i class="fa-brands fa-github"></i>
+                        <h2>GitHub</h2>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/harper-kerstens-3a5b65312/">
+                    <div>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <h2>LinkedIn</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
